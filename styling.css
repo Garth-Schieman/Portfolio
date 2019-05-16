@@ -1,0 +1,897 @@
+/*General stylesheet*/
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /*box sizing webpage*/
+    *{
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+    /*paralax display,grid-template-columns,grid-template-rows,width,height,background-colour,background-image,background-position,backgroun-repeat,and background-blend-mode*/
+    #paralax{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+            width: 100%;
+            height:700px;
+            background-color: rgba(60, 61, 63, 0.8);
+            background-image: url("images/paralax1.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+    }
+    /*topNav overflow and display*/
+    .topNav{
+            overflow: hidden;
+            display: none;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+    }
+    /*nav bar unordered list-style,word-spacing,margin-left,letter-spacing being styled*/
+    nav ul li{
+            list-style: none;
+            word-spacing: 4px;
+            letter-spacing: 2px;
+    }
+    /*class topNav anchor display,colour,float,text-align,padding,text-decoration,margin-left,and font-size*/
+    .topNav a{
+            width: 20%;
+            display:block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+    }
+    /*class topNav anchor hover background-colour,colour,text-decoration,border-radius*/
+    .topNav a:hover{
+                background-color: #ddd;
+                color: black;
+                text-decoration: underline;
+    }
+    /*active background-colour and colour*/
+    .active{
+            background-color: red;
+            color: white;
+    }
+    /*class icon width,height,text-decoration,font-size,and colour*/
+    .icon{
+          width: 40px;
+          height: 120px;
+          text-decoration: none;
+          font-size: 40px;
+          color: red;
+    }
+    /*styling container width,height,and background-image*/
+    #container{
+              width: 100%;
+              height: auto;
+              background-image: url("images/background.jpg");
+    }
+    /*styling personal statement width,height and grid-row-gap*/
+    #personalStatement{
+                      width:100%;
+                      height: auto;
+                      grid-row-gap:0px;
+                      padding-top: 30px;
+    }
+    /*prof-image border,border-radius,and margin-left*/
+    #prof_image{
+                display: none;
+                border: 5px solid white;
+                border-radius: 20%;
+                margin-left: 345px;
+
+    }
+
+    #notify{
+            display: none;
+    }
+    /*when active img must transform on click*/
+    #prof_image:active{
+                      transform: scale(2);
+
+    }
+    /*about info for display,grid-template-columns,grid-template-rows,and grid-row-gap*/
+    .about_info{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: auto;
+              grid-row-gap:0px;
+    }
+
+    /*class main camera width,height,background-colour,repeat,and size*/
+    .mainCamera{
+            width: 100%;
+            height: 340px;
+            margin-bottom: 100px;
+            background-image: url("images/camera.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+    }
+    /*camera width,height,margin-top,left,border,border-radius,and background-colour*/
+    #camera{
+            width: 10%;
+            height: 60px;
+            margin-top: 120px;
+            margin-left: 320px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba(60, 61, 63, 1);
+            animation-name: clickButton;
+            animation-duration: 15s;
+    }
+    /* animation for button to switch colours */
+    @keyframes clickButton {
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
+    /*camera hover cursor*/
+    #camera:hover{
+                  cursor: pointer;
+
+    }
+
+    /*styling id skills width and height*/
+    #skills{
+            width: 100%;
+            height: auto;
+    }
+    /*carousel inner width,height,display,grid-template-columns,grid-template-rows,background-colour,and overflow*/
+    #carousel_inner {
+                    width:100%;
+                    height: 200px;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    background-color: rgba(60, 61, 63, 0.8);
+    }
+    /*carousel unordered list and images width,and height*/
+    #carousel_ul li img {
+                        width: 100%;
+                        height: 150px;
+
+    }
+    /*carousel unordered list position,left,list-style-type,margin,padding,width,and padding-bottom*/
+    #carousel_ul {
+                  position: relative;
+                  left: 210px;
+                  list-style-type: none;
+                  margin: 0px;
+                  padding: 0px;
+                  width:200%;
+                  padding-bottom: 10px;
+    }
+    /*carousel unordered list width,height,padding,margin,and float*/
+    #carousel_ul li {
+                    width: 200px;
+                    height: 110px;
+                    padding: 0px;
+                    margin: 10px 5px 10px 5px;
+                    float: left;
+    }
+    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+    #carousel_ul li img {
+                        cursor: pointer;
+                        cursor: hand;
+                        margin-bottom: 4px;
+                        border: 0px;
+    }
+    /*left scroll and right scroll width,height,margin-top,margin-bottom,and float*/
+    #left_scroll, #right_scroll {
+                                width: 35px;
+                                height: 130px;
+                                margin-top: 50px;
+                                margin-left: 20px;
+                                float: left;
+    }
+    /*left scroll images width and height*/
+    #left_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*right scroll images width and height*/
+    #right_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*left scroll images and right scroll images border*/
+    #left_scroll img, #right_scroll img {
+                                        border: 0;
+                                        cursor: pointer;
+                                        cursor: hand;
+    }
+
+
+    /*experience display,grid-template-columns and rows,width,and height*/
+    #experience{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 100%;
+                height: auto;
+    }
+    /*styling duties font-weight and colour*/
+    .duties{
+            font-weight: bold;
+            color: gray;
+    }
+    /*reference width and height*/
+    #reference{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: auto;
+    }
+    /*ref details display,grid-template-columns and rows*/
+    .ref_details{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+    }
+    /*contact width,height,display,grid-template-columnsa,rows,colour,and background-colour*/
+    #contact{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,1fr);
+            color: black;
+            padding-left: 100px;
+            background-color: rgba(60, 61, 63, 0.8);
+    }
+    /*work done list-style and colour*/
+    .work_done li{
+                  list-style: square;
+                  color: red;
+    }
+    /*work done anchor tag colour,font-weight,text-decoration,padding-left*/
+    .work_done a{
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+    }
+    /*copyright width,height,display,grid-template-columns,grid-template-rows,colour,and background-colour*/
+    #copyright{
+              width: 100%;
+              height: auto;
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              color: black;
+              background-color: rgba(60, 61, 63, 0.8);
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 481px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /*box sizing webpage*/
+    *{
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+    /*paralax display,grid-template-columns,grid-template-rows,width,height,background-colour,background-image,background-position,backgroun-repeat,and background-blend-mode*/
+    #paralax{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+            width: 100%;
+            height:700px;
+            background-color: rgba(60, 61, 63, 0.8);
+            background-image: url("images/paralax1.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+    }
+    /*topNav overflow and display*/
+    .topNav{
+            overflow: hidden;
+            display: none;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+    }
+    /*nav bar unordered list-style,word-spacing,margin-left,letter-spacing being styled*/
+    nav ul li{
+            list-style: none;
+            word-spacing: 4px;
+            letter-spacing: 2px;
+    }
+    /*class topNav anchor display,colour,float,text-align,padding,text-decoration,margin-left,and font-size*/
+    .topNav a{
+            width: 20%;
+            display:block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+    }
+    /*class topNav anchor hover background-colour,colour,text-decoration,border-radius*/
+    .topNav a:hover{
+                background-color: #ddd;
+                color: black;
+                text-decoration: underline;
+    }
+    /*active background-colour and colour*/
+    .active{
+            background-color: red;
+            color: white;
+    }
+    /*class icon width,height,text-decoration,font-size,and colour*/
+    .icon{
+          width: 40px;
+          height: 120px;
+          text-decoration: none;
+          font-size: 40px;
+          color: red;
+    }
+    /*styling container width,height,and background-image*/
+    #container{
+              width: 100%;
+              height: auto;
+              background-image: url("images/background.jpg");
+    }
+    /*styling personal statement width,height and grid-row-gap*/
+    #personalStatement{
+                      width:100%;
+                      height: auto;
+                      grid-row-gap:0px;
+                      padding-top: 30px;
+    }
+    /*prof-image border,border-radius,and margin-left*/
+    #prof_image{
+                display: none;
+                border: 5px solid white;
+                border-radius: 20%;
+                margin-left: 345px;
+
+    }
+
+    #notify{
+            display: none;
+    }
+    /*when active img must transform on click*/
+    #prof_image:active{
+                      transform: scale(2);
+
+    }
+    /*about info for display,grid-template-columns,grid-template-rows,and grid-row-gap*/
+    .about_info{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: auto;
+              grid-row-gap:0px;
+    }
+
+
+        /*class main camera width,height,background-colour,repeat,and size*/
+        .mainCamera{
+                width: 100%;
+                height: 340px;
+                margin-bottom: 100px;
+                background-image: url("images/camera.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+        }
+        /*camera width,height,margin-top,left,border,border-radius,and background-colour*/
+        #camera{
+                width: 10%;
+                height: 60px;
+                margin-top: 120px;
+                margin-left: 320px;
+                border: none;
+                border-radius: 50%;
+                background-color: rgba(60, 61, 63, 1);
+                animation-name: clickButton;
+                animation-duration: 15s;
+        }
+        /* animation for button to switch colours */
+        @keyframes clickButton {
+            from {background-color: red;}
+            to {background-color: blue;}
+        }
+        /*camera hover cursor*/
+        #camera:hover{
+                      cursor: pointer;
+
+        }
+
+    /*styling id skills width and height*/
+    #skills{
+            width: 100%;
+            height: auto;
+    }
+    /*carousel inner width,height,display,grid-template-columns,grid-template-rows,background-colour,and overflow*/
+    #carousel_inner {
+                    width:100%;
+                    height: 200px;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    background-color: rgba(60, 61, 63, 0.8);
+    }
+    /*carousel unordered list and images width,and height*/
+    #carousel_ul li img {
+                        width: 100%;
+                        height: 150px;
+
+    }
+    /*carousel unordered list position,left,list-style-type,margin,padding,width,and padding-bottom*/
+    #carousel_ul {
+                  position: relative;
+                  left: 210px;
+                  list-style-type: none;
+                  margin: 0px;
+                  padding: 0px;
+                  width:200%;
+                  padding-bottom: 10px;
+    }
+    /*carousel unordered list width,height,padding,margin,and float*/
+    #carousel_ul li {
+                    width: 200px;
+                    height: 110px;
+                    padding: 0px;
+                    margin: 10px 5px 10px 5px;
+                    float: left;
+    }
+    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+    #carousel_ul li img {
+                        cursor: pointer;
+                        cursor: hand;
+                        margin-bottom: 4px;
+                        border: 0px;
+    }
+    /*left scroll and right scroll width,height,margin-top,margin-bottom,and float*/
+    #left_scroll, #right_scroll {
+                                width: 35px;
+                                height: 130px;
+                                margin-top: 50px;
+                                margin-left: 20px;
+                                float: left;
+    }
+    /*left scroll images width and height*/
+    #left_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*right scroll images width and height*/
+    #right_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*left scroll images and right scroll images border*/
+    #left_scroll img, #right_scroll img {
+                                        border: 0;
+                                        cursor: pointer;
+                                        cursor: hand;
+    }
+
+
+    /*experience display,grid-template-columns and rows,width,and height*/
+    #experience{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 100%;
+                height: auto;
+    }
+    /*styling duties font-weight and colour*/
+    .duties{
+            font-weight: bold;
+            color: gray;
+    }
+    /*reference width and height*/
+    #reference{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: auto;
+    }
+    /*ref details display,grid-template-columns and rows*/
+    .ref_details{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+    }
+    /*contact width,height,display,grid-template-columnsa,rows,colour,and background-colour*/
+    #contact{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,1fr);
+            color: black;
+            padding-left: 100px;
+            background-color: rgba(60, 61, 63, 0.8);
+    }
+    /*work done list-style and colour*/
+    .work_done li{
+                  list-style: square;
+                  color: red;
+    }
+    /*work done anchor tag colour,font-weight,text-decoration,padding-left*/
+    .work_done a{
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+    }
+    /*copyright width,height,display,grid-template-columns,grid-template-rows,colour,and background-colour*/
+    #copyright{
+              width: 100%;
+              height: auto;
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              color: black;
+              background-color: rgba(60, 61, 63, 0.8);
+    }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1025px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /*box sizing webpage*/
+    *{
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+    }
+    /*paralax display,grid-template-columns,grid-template-rows,width,height,background-colour,background-image,background-position,backgroun-repeat,and background-blend-mode*/
+    #paralax{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+            width: 100%;
+            height:500px;
+            background-color: rgba(60, 61, 63, 0.5);
+            background-image: url("images/paralax1.jpg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+    }
+    /*topNav overflow and display*/
+    .topNav{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+            overflow: hidden;
+            display: none;
+    }
+    /*nav bar unordered list-style,word-spacing,margin-left,letter-spacing being styled*/
+    nav ul li{
+            list-style: none;
+            word-spacing: 4px;
+            left: 0px;
+            letter-spacing: 2px;
+    }
+    /*class topNav anchor display,colour,float,text-align,padding,text-decoration,margin-left,and font-size*/
+    .topNav a{
+          display:block;
+          color: #f2f2f2;
+          float: left;
+          text-align: center;
+          padding: 14px 20px;
+          text-decoration: none;
+          margin-left: 40px;
+          font-size: 17px;
+    }
+    /*class topNav anchor hover background-colour,colour,text-decoration,border-radius*/
+    .topNav a:hover{
+                background-color: #ddd;
+                opacity: 0.6;
+                color: black;
+                text-decoration: underline;
+                border-radius: 20%;
+    }
+    /*active background-colour and colour*/
+    .active{
+            background-color: red;
+            color: white;
+    }
+    /*class icon width,height,text-decoration,font-size,and colour*/
+    .icon{
+          width: 80px;
+          height: 40px;
+          text-decoration: none;
+          font-size: 40px;
+          color: red;
+    }
+/*scroll position,right,bottom,cursor,width,height,background-colour,display,border-radius*/
+    #scroll {
+        position:fixed;
+        right:10px;
+        bottom:10px;
+        cursor:pointer;
+        width:50px;
+        height:60px;
+        background-color:#ff000000;
+        display:none;
+        border: 1px solid black;
+        border-radius:10%;
+    }
+/*scroll span position,top,left,bottom,height,width,font-size,and colour*/
+    #scroll span {
+        position:absolute;
+        top:20%;
+        left:30%;
+        bottom: 20%;
+        height:0;
+        width:0;
+        font-size: 30px;
+        color: gray;
+    }
+
+    /*styling container width,height,and margin-left,and top*/
+    #container{
+              width: 100%;
+              height: auto;
+              background-image: url("images/background.jpg");
+    }
+    /*styling personal statement width,height and grid-row-gap*/
+    #personalStatement{
+                      width:80%;
+                      height: auto;
+                      margin-left:120px;
+                      padding-top: 25px;
+                      grid-row-gap:0px;
+    }
+    /*prof-image border,border-radius,and margin-left*/
+    #prof_image{
+                border: 5px solid white;
+                border-radius: 20%;
+                margin-left: 28px;
+    }
+    /*prof-image display and cursor*/
+    #prof_image{
+                display: none;
+                cursor: pointer;
+    }
+
+    /*when active img must transform on click*/
+    #prof_image:active{
+                      transform: scale(2);
+
+    }
+
+    #statement_strengths{
+                        margin-top:40px;
+    }
+    /*about info for display,grid-template-columns,grid-template-rows,and grid-row-gap*/
+    .about_info{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: 370px;
+              grid-row-gap:0px;
+    }
+    /*class main camera width,height,background-colour,repeat,and size*/
+    .mainCamera{
+            width: 100%;
+            height: 340px;
+            background-image: url("images/camera.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+    }
+    /*camera width,height,margin-top,left,border,border-radius,and background-colour*/
+    #camera{
+            width: 10%;
+            height: 60px;
+            margin-top: 120px;
+            margin-left:50px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba(60, 61, 63, 1);
+            animation-name: clickButton;
+            animation-duration: 15s;
+    }
+    /* animation for button to switch colours */
+    @keyframes clickButton {
+        from {background-color: red;}
+        to {background-color: blue;}
+    }
+    /*camera hover cursor*/
+    #camera:hover{
+                  cursor: pointer;
+
+    }
+
+    /*styling id skills width and height*/
+    #skills{
+            width: 80%;
+            height: auto;
+            margin-left:120px;
+    }
+    /*carousel inner width,height,display,grid-template-columns,grid-template-rows,background-colour,and overflow*/
+    #carousel_inner {
+                    width:100%;
+                    height: 200px;
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+                    background-color: rgba(60, 61, 63, 0.8);
+
+    }
+    /*carousel unordered list and images width,and height*/
+    #carousel_ul li img {
+                        width: 100%;
+                        height: 150px;
+
+    }
+    /*carousel unordered list position,left,list-style-type,margin,padding,width,and padding-bottom*/
+    #carousel_ul {
+                  position: relative;
+                  left: 210px;
+                  list-style-type: none;
+                  margin: 0px;
+                  padding: 0px;
+                  width:200%;
+                  padding-bottom: 10px;
+    }
+    /*carousel unordered list width,height,padding,margin,and float*/
+    #carousel_ul li {
+                    width: 200px;
+                    height: 110px;
+                    padding: 0px;
+                    margin: 25px 5px 10px 5px;
+                    float: left;
+    }
+    /*carousel unordered list images margin-bottom,cursor,cursor,and border*/
+    #carousel_ul li img {
+                        cursor: pointer;
+                        cursor: hand;
+                        margin-bottom: 4px;
+                        border: 0px;
+    }
+    /*left scroll and right scroll width,height,margin-top,margin-bottom,and float*/
+    #left_scroll, #right_scroll {
+                                width: 35px;
+                                height: 130px;
+                                margin-top: 50px;
+                                margin-left: 20px;
+                                float: left;
+    }
+    /*left scroll images width and height*/
+    #left_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*right scroll images width and height*/
+    #right_scroll img {
+                      width: 25px;
+                      height: 25px;
+    }
+    /*left scroll images and right scroll images border*/
+    #left_scroll img, #right_scroll img {
+                                        border: 0;
+                                        cursor: pointer;
+                                        cursor: hand;
+
+    }
+
+    .workHistory{
+                width: 80%;
+                height: auto;
+                margin-left:120px;
+    }
+
+    /*experience display,grid-template-columns and rows,width,and height*/
+    #experience{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(1,1fr);
+                width: 80%;
+                margin-left:120px;
+                text-align: center;
+                height: auto;
+    }
+    /* Volunteer display,grid-template-columns,grid-template-rows,width,and height */
+    .Volunteer{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 100%;
+              height: auto;
+    }
+    /*styling duties font-weight and colour*/
+    .duties{
+            font-weight: bold;
+            color: gray;
+    }
+
+    .educationHistory{
+                      width: 80%;
+                      height: auto;
+                      margin-left:120px;
+
+    }
+    #education{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 80%;
+              margin-left:120px;
+              height: auto;
+    }
+    /* padding right for the dotted line divider */
+    #lineDivider{
+                padding-right:30px;
+              }
+
+    /*reference width and height*/
+    #reference{
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              width: 80%;
+              height: auto;
+              margin-left:120px;
+    }
+    /*ref details display,grid-template-columns and rows*/
+    .ref_details{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(1,1fr);
+                margin-left:120px;
+    }
+    /*contact width,height,display,grid-template-columnsa,rows,colour,and background-colour*/
+    #contact{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,1fr);
+            color: black;
+            padding-left: 100px;
+            background-color: rgba(60, 61, 63, 0.8);
+    }
+    /*work done list-style and colour*/
+    .work_done li{
+              list-style: square;
+              color: red;
+              margin-bottom: 5px;
+              margin-top: 13px;
+    }
+    /*work done anchor tag colour,font-weight,text-decoration,padding-left*/
+    .work_done a{
+                color: black;
+                text-decoration: none;
+                padding-left: 4px;
+    }
+    /* anchor tag hover colour */
+    .work_done a:hover{
+                color: red;
+    }
+    /*copyright width,height,display,grid-template-columns,grid-template-rows,colour,and background-colour*/
+    #copyright{
+              width: 100%;
+              height: auto;
+              display: grid;
+              grid-template-columns: repeat(1,1fr);
+              grid-template-rows: repeat(1,1fr);
+              color: black;
+              background-color: rgba(60, 61, 63, 0.8);
+    }
+
+}

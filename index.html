@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio|Garth Schieman</title>
+    <!-- link to icon for title -->
+    <link rel="icon" type="image/PNG" href="images/Portfolio_Icon.png">
+    <!-- link to external css styling -->
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <!-- reference to jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- reference to family-fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- reference to font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- header for h1 for person name,paragraph tag for curriculum vitae, and nav bar for internal jump links -->
+    <header id="paralax">
+    <!-- anchor tag for hamburger menu icon -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+    <!-- nav bar for internal jump links to specific sections -->
+      <nav class="topNav" id="myNav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#personalStatement">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="name_title">
+      <!-- name of person  -->
+        <h1 style="color:white;margin-left:100px;">Garth Schieman</h1>
+      <!-- job title of person -->
+        <p style="color:white;margin-left:100px;">Curriculum Vitae</p>
+      </div>
+    </header>
+
+    <a href="#" id="scroll" style="display: none;"></a>
+    <!-- section for id container -->
+    <section id="container">
+      <!-- div id for personal statement on about section -->
+      <div id="personalStatement">
+      <!-- h2 heading for about me heading and table for professional image and personal statement & strengths -->
+        <h2 style="border-bottom:1px solid lightgray;margin-top: 0px;"><span style="border-bottom:2px solid gray;color:#585858;" >About me: <span><i class="fa fa-angle-double-up" style="font-size:28px;color:red;cursor:pointer;" id="aboutUp"></i></span></span></h2>
+
+        <div class="about_info">
+
+          <div class="mainCamera">
+            <button type="button" name="button" id="camera">Click ME</button>
+            <p><img src="images/CPT.jpg" alt="prof_image" width="285px" height="200px" id="prof_image"></p>
+          </div>
+
+          <div id="statement_strengths">
+            <p>I’m a young, creative and dedicated individual who loves being challenged. I enjoy learning new technology and believe that tech is essential in today's age. My passion for computers has allowed me to develop excellent front-end coding skills in which I display my creativity and imagination.</p>
+
+            <p>I have strong communication skills, am self-motivated and confident. I am constantly developing my leadership and conflict resolution skills and am assured that I’ll be a huge asset to any company or organisation.</p>
+          </div>
+        </div>
+      </div>
+      <!-- div id skills for h2 heading, with div's and images -->
+      <div id="skills">
+      <!-- h1 heading with inline styling for span tag to highlight skills   -->
+        <h2 style="border-bottom:1px solid lightgray;"><span style="border-bottom:2px solid gray;color:#585858;">Skills: <span><i class="fa fa-angle-double-up" style="font-size:28px;color:red;cursor:pointer;" id="skillUp"></i></span></span></h1>
+
+      <!-- section id for carousel,div id carousel-container,wuth div id carousel inner with unordered list with anchor tags consisting for partners logo   -->
+        <div id='carousel_container'>
+          <div id='carousel_inner'>
+            <ul id='carousel_ul'>
+              <li>
+                <a href='#'>
+                  <img src="images/html.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/css.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/sass.png">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/grid-layout.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/javascript.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/responsiveness.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src="images/jQuery.jpg" alt="">
+                </a>
+              </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- div experience, education,leadership has inline styling h2 headings for subheading,unordered list for name of organisation/company,course done and span tags for dates -->
+      <div>
+
+      <div class="workHistory">
+        <!-- h2 inline border-bottom styling for experience heading-->
+        <h2 style="border-bottom:1px solid lightgray;"><span style="border-bottom:2px solid gray;color:#585858;">Work Experience: <span><i class="fa fa-angle-double-up" style="font-size:28px;color:red;cursor:pointer;" id="experienceUp"></i></span></span></h2>
+      </div>
+
+        <div id="experience">
+          <div style="margin-left:20px;">
+            <h2 style="font-size:18px;">Codespace</h2>
+            <p>Web Development Teacher</p>
+            <span style="color:red;">13-April-18 – 13-April-19</span>  
+            <p>lessons- Have interactive lessons with students, help and assist them with coding challenges and weekly projects. One of the duties is to ensure students understand all the coding languages and frameworks covered in the course. (Languages are HTML, CSS, JAVASCRIPT, RESPONSIVE DESIGN, SASS, AND NODE.JS)</p>
+            <p>Bootcamps- Assist with regular bootcamp to ensure that applicants are competent of completing a 6 months coding course (bootcamp covers activities such as problem-solving,typing speed,paying attention to detail and basic coding skills).</p> 
+          </div>
+          <div style="margin-left:20px;">
+            <h2 style="font-size:18px;">Spine Road</h2>
+            <p>Administration Clerk (3-month internship)</p>
+            <span style="color:red;">13 Feb ‘17 – 13 April ‘17</span>
+            <p>I completed duties such as taking telephone calls, relay messages, receive and dispatch mail.Arrange and participate in meeting.Data Capturing such as typing letters, reports, timetables, class lists, agendas, curriculum documents and updating weekly registers.Photocopying collating, assembling and distributing of documents and circulars.Assisting the school secretary/ admin manager to maintain the filing system.Maintaining manual and computer records of pupil’s personal details. Assist teachers to keep records of learner’s attendance and absenteeism.Assist with supervision of learners in emergencies. Invigilate during examinations and tests. Provide teacher with admin support.</p>
+          </div>
+
+          <div class="Volunteer">
+            <div style="border-right:1px dotted;margin-top:30px;">
+              <h2 style="font-size:18px;">Glendale Secondary Senior School</h2>
+              <p>Volunteer</p>
+              <span style="color:red;">19 Jan ‘17 -  25 Jan ‘17</span>
+              <p>Sorting and handing out of textbooks.</p>
+            </div>
+
+            <div style="margin-left:20px;margin-top:20px;">
+              <h2 style="font-size:18px;">St Timothy Catholic Church</h2>
+              <p>Volunteer</p>
+              <span style="color:red;">14 April ‘16 – 10 Oct ‘16</span>
+              <p>Sunday School Catechist</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="educationHistory">
+          <!-- h2 inline border-bottom styling for education heading-->
+          <h2 style="border-bottom:1px solid lightgray;"><span style="border-bottom:2px solid gray;color:#585858;" id="education_head">Education:<span><i class="fa fa-angle-double-up" style="font-size:28px;color:red;cursor:pointer;" id="educationUp"></i></span></span></h2>
+        </div>
+
+        <div id="education">
+          <div style="border-right: 1px dotted;" id="lineDivider">
+            <!-- unordered list for organisation name and modules covered with paragraph tag for infomation ,and span tags for date started and ended  -->
+              <h2 style="font-size:18px;">Salesians Life Choices Academy — Web Development (6 months full-time course): 2017</h2>
+              <p>The Life Choices Academy is a full-time program which empowers youth from the Cape Flats with life, practical and professional development skills. We did intensive study of the following web development languages: HTML, CSS, jQuery, JavaScript and Sass. As part of our professional development, we had the opportunity to use online resources such as MOOCs, were taught Design Thinking and made use of resources for personal reflection, such as DISC profiles and SMART goal setting. Taking part in this program has really enhanced my self-awareness in knowing myself better and also guiding me to my purpose in life. This course has taught me to think more analytically and see things more broadly. I was exposed to various seminars, lectures and leadership programs. This helped me make my own decisions in life allowing me to take responsibility for my actions and give me sense of independence.</p>
+          </div>
+
+          <div style="margin-left:20px;">
+            <h2 style="font-size:18px;">Glendale Secondary Senior School</h2>
+            <p>National Senior Certificate</p>
+            <span style="color:red;">Jan ‘12 – Dec ‘16</span>
+            <ul>
+              <h3>Subjects covered:</h3>
+              <li>English Home Language</li>
+              <li>Afrikaans First Additional Language</li>
+              <li>Mathematics</li>
+              <li>Life Orientation</li>
+              <li>Business Studies</li>
+              <li>Accounting</li>
+              <li>Tourism</li>
+              <li>Computer Application Technology (taken from 2014 - 2016):</li>
+              <li>Microsoft Word, Excel, PowerPoint, Access, Web design</li>
+              <li>Leadership role: Senior Rugby Team Vice Captain (2013 - 2016)</li>
+
+            </ul>
+          </div>
+        </div>
+
+      <!-- div id for previous job references -->
+      <div id="reference">
+      <!-- h2 and span inline border-bottom styling for reference heading -->
+        <h2 style="border-bottom:1px solid lightgray;"><span style="border-bottom:2px solid gray;color:#585858;">References: <span><i class="fa fa-angle-double-up" style="font-size:28px;color:red;cursor:pointer;" id="referenceUp"></i></span></span></h2>
+
+        <div class="ref_details" style="padding:0px 80px 0px 80px;">
+          <div class="details">
+              <p>Emma Engers</p>
+              <p>Codespace (Supervisor)</p>
+              <p>073-174-8111</p>
+          </div>
+
+          <div class="details">
+            <p>Candice Amon</p>
+            <p>Lifechoices</p>
+            <p>021-696-4157</p>
+          </div>
+
+          <div class="details">
+              <p>Rehana Harnekar</p>
+              <p>Spine Road High</p>
+              <p>084-581-2688</p>
+            </div>
+
+          <div class="details">
+            <p>Kathleen David’s</p>
+            <p>Glendale Secondary Senior School</p>
+            <p>081-043-0640</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- footer for id contact with div for contact detail -->
+    <footer>
+      <!-- id contact for class contact_details with a paragraph tag for copyright -->
+      <div id="contact">
+        <div class="work_done">
+          <h3>Websites done:</h3>
+          <table>
+            <tr>
+              <ul>
+                <td>
+                  <li><a href="https://garth-schieman.github.io/background/html_Project.html" target="_blank">First html site</a></li>
+                </td>
+              </ul>
+            </tr>
+            <tr>
+              <ul>
+                <td>
+                  <li><a href="https://garth-schieman.github.io/sabc/Homepage.html" target="_blank">Sabc template</a></li>
+                </td>
+              </ul>
+            </tr>
+            <tr>
+              <ul>
+                <td>
+                  <li><a href="https://garth-schieman.github.io/adventure/Clint%20Adventures.html" target="_blank">Clint Adventures</a></li>
+                </td>
+              </ul>
+            </tr>
+            <tr>
+              <ul>
+                <td>
+                  <li><a href="https://garth-schieman.github.io/Code-4-CT/homepage.html" target="_blank">Code 4 CT</a></li>
+                </td>
+              </ul>
+            </tr>
+            <tr>
+                <ul>
+                  <td>
+                    <li><a href="https://garth-schieman.github.io/portfolio2/index.html" target="_blank">Professional Portfolio</a></li>
+                  </td>
+                </ul>
+              </tr>
+          </table>
+        </div>
+
+        <!-- class contact_details with inline styling to shift div to the left -->
+        <div class="contact_details">
+          <!-- h3 heading contact details heading -->
+          <h3>Contact Details:</h3>
+          <!-- table for phone number,email,and address icons,and phone number,email-address,and physical address -->
+          <table>
+            <tr>
+              <td><img src="images/tel.png" alt="tel" width="30px" height="20px"></td>
+              <td><p>(+27)71-089-2022</p></td>
+            </tr>
+            <tr>
+              <td><img src="images/email.png" alt="email" width="30px" height="20px"></td>
+              <td><p>garthschieman05@gmail.com</p></td>
+            </tr>
+            <tr>
+              <td><img src="images/address.png" alt="address" width="30px" height="20px"></td>
+              <td><p>25 Alps Circle, Searidge Park, Mitchell’s Plain, 7785</p></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      <div id="copyright">
+        <p style="text-align:center;">copyright&copy;2017</p>
+        <p style="text-align:center;">Privacy Policy|Garth Schieman</p>
+      </div>
+    </footer>
+    <!-- link to external javascript -->
+    <script src="scripting.js"></script>
+  </body>
+</html>
